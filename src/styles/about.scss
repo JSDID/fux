@@ -1,0 +1,196 @@
+.active {
+  padding-bottom: 5px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 1px;
+    background: rgba(#595959, .7);
+  }
+}
+.breadcrumbs {
+  background: rgba(#eee, .7);
+  padding: 13px 14px;
+  position: relative;
+  z-index: 10;
+  &__list {
+    display: flex;
+  }
+  &__item::after {
+    content: ' / ';
+  }
+  &__item:last-child::after {
+    display: none;
+  }
+  &__link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #5A5A5A;
+  }
+}
+
+.about {
+  &__prev {
+    background: url('../img/about.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+  }
+  &__prev-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: #363838;
+  }
+  &__content {
+    padding: 100px 0 40px;
+  }
+  &__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    color: #363838;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        width: 200px;
+        border-radius: 1px;
+        background: #8D7279;
+      }
+  }
+  &__text {
+    padding-left: 300px;
+    padding-bottom: 100px;
+    p {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      color: #5A5A5A;
+      margin-bottom: 30px;
+    }
+  }
+  &__popup {
+    background-image: url('../img/video_post.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+} 
+.inspiration {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/ourinsp.png');
+    height: 420px;
+    z-index: -1;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  &__images {
+    margin-right: 80px;
+  }
+  &__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    color: #363838;
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        width: 200px;
+        background: #6D7279;
+      }
+  }
+  &__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5A5A5A
+  }
+  &__content {
+    max-width: 825px;
+  }
+  &__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #363838;
+    line-height: 23px;
+    margin-bottom: 33px;
+  }
+  &__item-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #fff;
+    border-radius: 4px;
+  }
+  &__line {
+    height: 2px;
+    border-radius: 4px;
+    background-color: #363838;
+    margin-top: -2px;
+  }
+}
+
+.parthenrs {
+  margin-bottom: 100px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+// 7 27

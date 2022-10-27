@@ -1,0 +1,40 @@
+a {
+  text-decoration: none;
+  transition: color 0.5s;
+
+  &:hover {
+    color: #565656;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #5A5A5A;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
